@@ -1,0 +1,11 @@
+# action.yml
+name: "Run Salesforce Ant Migration Tool"
+description: "Use the Salesforce Ant Migration Tool"
+inputs:
+  command:
+    description: "Ant command to run"
+    required: true
+    default: "ant deploy"
+runs:
+  using: "node12"
+  main: "index.js"
